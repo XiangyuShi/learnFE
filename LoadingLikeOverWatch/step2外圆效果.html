@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>step2外圆效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+            background: #282828;
+        }
+
+        .overwatch-container {
+            width: 232px;
+            margin: 50px auto;
+            positon: relative;
+        }
+
+        .out-ring1 {
+            height: 220px;
+            width: 220px;
+            position: absolute;
+            top: 6px;
+            left: 6px;
+        }
+
+        .out-ring1::before, .out-ring1::after {
+            content: "";
+            height: 220px;
+            width: 220px;
+            border-radius: 50%;
+            position: absolute;
+        / / 绝对定位 top: - 6 px;
+            left: -6px;
+            border: 6px solid rgba(161, 164, 176, 0.5)
+        }
+
+        .out-ring1::before {
+            clip: rect(60px, 232px, 172px, 100px);
+            transform: rotate(230deg);
+        }
+
+        .out-ring1::after {
+            clip: rect(80px, 232px, 152px, 100px); //position must be absolute or fixed
+            transform: rotate(120deg);
+        }
+
+        .out-ring2 {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+        }
+        .out-ring2::before,.out-ring2::after{
+            content: "";
+            height: 220px;
+            width:220px;
+            border-radius:50%;
+            position:absolute;
+            top:-6px;
+            left:-6px;
+            border:6px solid rgba(161,164,176,0.5)
+        }
+        .out-ring2::before {
+            clip: rect(105px, 232px, 127px, 100px);
+        }
+        .out-ring2::after {
+            clip: rect(112px, 232px, 120px, 100px);
+        }
+    </style>
+</head>
+<body>
+<div class="overwatch-container">
+    <div class="out-ring-container">
+        <div class="out-ring1"></div>
+        <div class="out-ring2"></div>
+    </div>
+    <div class="inner-ring-container">
+    </div>
+    <div class="inner-img">
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>step3logo实现</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+            background: #282828;
+        }
+
+        .overwatch-container {
+            width: 232px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .out-ring1 {
+            height: 220px;
+            width: 220px;
+            position: absolute;
+            top: 6px;
+            left: 6px;
+        }
+
+        .out-ring1::before, .out-ring1::after {
+            content: "";
+            height: 220px;
+            width: 220px;
+            border-radius: 50%;
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            border: 6px solid rgba(161, 164, 176, 0.5);
+        }
+
+        .out-ring1::before {
+            clip: rect(60px, 232px, 172px, 100px);
+            transform: rotate(230deg);
+        }
+
+        .out-ring1::after {
+            clip: rect(80px, 232px, 152px, 100px);
+            transform: rotate(120deg);
+        }
+
+        .out-ring2 {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+        }
+
+        .out-ring2::before, .out-ring2::after {
+            content: "";
+            height: 220px;
+            width: 220px;
+            border-radius: 50%;
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            border: 6px solid rgba(161, 164, 176, 0.5);
+        }
+
+        .out-ring2::before {
+            clip: rect(105px, 232px, 127px, 100px);
+        }
+
+        .out-ring2::after {
+            clip: rect(112px, 232px, 120px, 100px);
+        }
+
+        .inner-img {
+            width: 120px;
+            height: 120px;
+            border: 20px solid #B6B8C0;
+            background: transparent;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 36px;
+        }
+
+        .inner-img::before {
+            content: "";
+            height: 20px;
+            width: 66px;
+            position: absolute;
+            background: #B6B8C0;
+            bottom: 0;
+            left: 0;
+            transform: rotate(-45deg);
+            transform-origin: left;
+        }
+
+        .inner-img::after {
+            content: "";
+            height: 20px;
+            width: 66px;
+            position: absolute;
+            background: #B6B8C0;
+            bottom: 0;
+            right: 0;
+            transform: rotate(45deg);
+            transform-origin: right;
+        }
+
+        .inner-img-shelter::before, .inner-img-shelter::after {
+            content: "";
+            height: 4px;
+            width: 21px;
+            background: #282828;
+            position: absolute;
+            top: 15px;
+        }
+
+        .inner-img-shelter::before {
+            left: -4px;
+            transform: rotate(45deg);
+            transform-origin: bottom right;
+        }
+
+        .inner-img-shelter::after {
+            right: -4px;
+            transform: rotate(-45deg);
+            transform-origin: bottom left;
+        }
+
+        .inner-img-triangle::before {
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-width: 0px 0px 50px 20px;
+            border-left-color: transparent;
+            border-bottom-color: #B6B8C0;
+            border-style: solid;
+            position: absolute;
+            top: 20px;
+            left: 34px;
+        }
+
+        .inner-img-triangle::after {
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-width: 0px 20px 50px 00px;
+            border-right-color: transparent;
+            border-bottom-color: #B6B8C0;
+            border-style: solid;
+            position: absolute;
+            top: 20px;
+            right: 34px;
+        }
+    </style>
+</head>
+<body>
+<div class="overwatch-container">
+    <div class="out-ring-container">
+        <div class="out-ring1"></div>
+        <div class="out-ring2"></div>
+    </div>
+    <div class="inner-ring-container">
+    </div>
+    <div class="inner-img">
+        <div class="inner-img-shelter"></div>
+        <div class="inner-img-triangle"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>step4实现里圆效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 220px;
+            margin: 20px auto;
+        }
+
+        .loading-container {
+            position: relative;
+        }
+
+        .loading {
+            width: 110px;
+            height: 220px;
+            /*border-radius: 50%;*/
+            /*border: 10px solid yellow;*/
+            /*animation: loading 2s linear infinite;*/
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .loading-content {
+            width: 200px;
+            height: 200px;
+            border: 10px solid yellow;
+            border-radius: 50%;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            transform: rotate(-225deg);
+            animation: loading 2s infinite linear;
+        }
+
+        .loading2 {
+            width: 110px;
+            height: 220px;
+            position: absolute;
+            overflow: hidden;
+            right: 0;
+            top: 0;
+            /*border-radius: 50%;*/
+            /*border: 10px solid yellow;*/
+            /*position: absolute;*/
+            transform: rotate(180deg);
+            /*clip: rect(0px, 0px, 0px, 0px);*/
+            /*animation: loading2 2s linear infinite;*/
+        }
+
+        .loading2-content {
+            width: 200px;
+            height: 200px;
+            border: 10px solid yellow;
+            border-radius: 50%;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            transform: rotate(-225deg);
+            animation: loading2 2s infinite linear;
+        }
+
+        .number {
+            width: 220px;
+            height: 40px;
+            position: absolute;
+            top: 90px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        @keyframes loading {
+            0% {
+                /*clip: rect(0px, 220px, 0px, 110px);*/
+                transform: rotate(-225deg);
+            }
+            50% {
+                /*clip: rect(0px, 220px, 220px, 110px);*/
+                transform: rotate(-225deg);
+            }
+            100% {
+                /*clip: rect(0px, 220px, 220px, 110px);*/
+                transform: rotate(-45deg);
+            }
+        }
+
+        @keyframes loading2 {
+            0% {
+                /*clip: rect(0px, 220px, 0px, 110px);*/
+                transform: rotate(-225deg);
+            }
+            50% {
+                /*clip: rect(0px, 220px, 0px, 110px);*/
+                transform: rotate(-45deg);
+            }
+            100% {
+                /*clip: rect(0px, 220px, 220px, 110px);*/
+                transform: rotate(-45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="loading-container">
+    <div class="loading">
+        <div class="loading-content"></div>
+    </div>
+    <div class="loading2">
+        <div class="loading2-content"></div>
+    </div>
+    <div class="number" id="number"></div>
+</div>
+<script>
+    var number = document.getElementById("number");
+    function changeNumber() {
+        var timer = setTimeout(changeNumber, 20);
+        var text = number.innerText;
+        var newText = Number(text.replace(/%/, ''));
+        if (newText < 100) {
+            newText++;
+        }
+        else {
+            clearTimeout(timer);
+        }
+        number.innerText = newText + "%";
+    }
+    changeNumber();
+</script>
+</body>
+</html>
