@@ -1,0 +1,6 @@
+.idea
+*.iml
+target
+src/main/resources/dataBaseConfig.properties
+docs/_build
+node_modules/
