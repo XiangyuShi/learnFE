@@ -15,7 +15,7 @@ block education
 
 
 block language
-  +section("language", false)
+  +section("language", true)
     each lang in language
       +certificate(lang.certificate)
       ul.language-description
@@ -47,7 +47,7 @@ block links
         li.link
           a(href=link.url)= link_type[link.type]
 
-block repo
-  p
-    | This resume is generated with Gulp, Less and Jade by 
-    | #[a(href="https://github.com/joyeecheung/resume") Joyee Cheung&#39;s resume generator].
+//block repo
+//  p
+//    | This resume is generated with Gulp, Less and Jade by
+//    | #[a(href="https://github.com/joyeecheung/resume") Joyee Cheung&#39;s resume generator].
