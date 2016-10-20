@@ -12,3 +12,4 @@ date| project
 16/10/13|FEtools
 16/10/18|响应式网站设计
 16/10/19|weChart(first part)
+16/10/20|Design Pattern of JS
