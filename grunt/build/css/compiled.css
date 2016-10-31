@@ -1,0 +1,27 @@
+.slightly-rounded {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+}
+.very-rounded {
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  background-clip: padding-box;
+}
+
+a {
+  background-color: #FFC;
+}
+blockquote {
+  background-color: #333;
+  color: #FFC;
+}
+
+input {
+  width: 140px;
+}
+textarea {
+  width: 200px;
+}
