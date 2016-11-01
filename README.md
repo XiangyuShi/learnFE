@@ -14,3 +14,4 @@ date| project
 16/10/19|weChart(first part)
 16/10/20|Design Pattern of JavaScript
 16/10/31|Grunt
+16/11/01|Design Pattern of JavaScript
