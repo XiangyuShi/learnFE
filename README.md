@@ -13,6 +13,7 @@ date| project
 16/10/18|响应式网站设计
 16/10/19|weChart(first part)
 16/10/20|Design Pattern of JavaScript
+16/10/28|interview
 16/10/31|Grunt
 16/11/01|Design Pattern of JavaScript
 16/11/02|Design Pattern of JavaScript and Some Front-End Algorithms You Should Know
