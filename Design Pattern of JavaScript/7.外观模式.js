@@ -17,10 +17,10 @@ function addEvent(dom, type, fn) {
         dom['on' + type] = fn;
     }
 }
-var myInput=document.getElementById('myInput');
-addEvent(myInput,'click',function () {
+var myInput = document.getElementById('myInput');
+addEvent(myInput, 'click', function () {
     console.log('绑定第一个事件');
 })
-addEvent(myInput,'click',function () {
+addEvent(myInput, 'click', function () {
     console.log('绑定第二个事件');
 })
