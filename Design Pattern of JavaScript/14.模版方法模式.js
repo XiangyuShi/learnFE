@@ -104,21 +104,21 @@ CancelAlert.prototype.init = function () {
     TitleAlert.prototype.init.call(this);
     this.panel.appendChild(this.cancelBtn);
 }
-CancelAlert.prototype.bindEvent=function () {
-    var that=this;
+CancelAlert.prototype.bindEvent = function () {
+    var that = this;
     TitleAlert.prototype.bindEvent.call(that);
-    this.cancelBtn.onclick=function () {
+    this.cancelBtn.onclick = function () {
         that.fail();
         that.hide();
     }
 }
 new CancelAlert({
-    title:'提示标题',
-    content:'提示内容',
-    success:function () {
+    title: '提示标题',
+    content: '提示内容',
+    success: function () {
         console.log('ok');
     },
-    fail:function(){
+    fail: function () {
         console.log('cancel');
     }
 }).init();

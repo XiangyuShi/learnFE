@@ -28,10 +28,10 @@ decorator('tel_input', function () {
     document.getElementById('tel_demo_text').style.display = 'none';
 });
 //姓名输入框功能装饰
-decorator('name_input',function () {
+decorator('name_input', function () {
     document.getElementById('name_demo_text').style.display = 'none';
 });
 //地址输入框功能装饰
-decorator('adress_input',function () {
+decorator('adress_input', function () {
     document.getElementById('adress_demo_text').style.display = 'none';
 });

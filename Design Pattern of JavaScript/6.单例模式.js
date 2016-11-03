@@ -36,6 +36,7 @@ var LazySingle = (function () {
             publicProperty: '1.0'
         }
     }
+
     //获取单例对象接口
     return function () {
         //如果为创建单例将创建单例

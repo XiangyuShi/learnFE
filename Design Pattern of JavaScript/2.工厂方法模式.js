@@ -24,7 +24,7 @@ Factory.prototype = {
             document.getElementById('container').appendChild(div);
         })(content);
     },
-    JavaScript:function (content) {
+    JavaScript: function (content) {
         //将内容保存在content中备用
         this.content = content;
         //创建对象，通过闭包，直接执行，将内容按需求的样式插入到页面内
@@ -35,7 +35,7 @@ Factory.prototype = {
             document.getElementById('container').appendChild(div);
         })(content);
     },
-    UI:function (content) {
+    UI: function (content) {
         //将内容保存在content中备用
         this.content = content;
         //创建对象，通过闭包，直接执行，将内容按需求的样式插入到页面内
@@ -46,7 +46,7 @@ Factory.prototype = {
             document.getElementById('container').appendChild(div);
         })(content);
     },
-    PHP:function (content) {
+    PHP: function (content) {
         //将内容保存在content中备用
         this.content = content;
         //创建对象，通过闭包，直接执行，将内容按需求的样式插入到页面内
@@ -58,9 +58,9 @@ Factory.prototype = {
         })(content);
     }
 };
-var data=[
-    {type:'JavaScript',content:'js'},
-    {type:'PHP',content:'php'},
-    {type:'UI',content:'ui'},
-    {type:'Java',content:'java'},
+var data = [
+    {type: 'JavaScript', content: 'js'},
+    {type: 'PHP', content: 'php'},
+    {type: 'UI', content: 'ui'},
+    {type: 'Java', content: 'java'},
 ];
