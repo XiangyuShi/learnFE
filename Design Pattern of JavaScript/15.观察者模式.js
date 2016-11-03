@@ -84,5 +84,6 @@ student3.answer('什么是设计模式');
 student3.answer('简述观察者模式');
 student3.sleep('简述观察者模式');
 var teacher = new Teacher();
+
 teacher.ask('什么是设计模式');
 teacher.ask('简述观察者模式');
