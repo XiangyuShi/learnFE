@@ -1,13 +1,13 @@
 /**
  * Created by hnsxy on 2016/11/4 0004.
  */
-//Chain of Responsibility:è§£å†³è¯·æ±‚çš„å‘é€è€…ä¸è¯·æ±‚çš„æ¥å—è€…ä¹‹é—´çš„è€¦åˆï¼Œé€šè¿‡èŒè´£é“¾ä¸Šçš„å¤šä¸ªå¯¹è±¡å¯¹åˆ†è§£è¯·æ±‚æµç¨‹ï¼Œå®ç°è¯·æ±‚åœ¨å¤šä¸ªå¯¹è±¡ä¹‹é—´çš„ä¼ é€’ï¼ŒçŸ¥é“æœ€åä¸€ä¸ªå¯¹è±¡å®Œæˆè¯·æ±‚çš„å¤„ç†
+//Chain of Responsibility:½â¾öÇëÇóµÄ·¢ËÍÕßÓëÇëÇóµÄ½ÓÊÜÕßÖ®¼äµÄñîºÏ£¬Í¨¹ıÖ°ÔğÁ´ÉÏµÄ¶à¸ö¶ÔÏó¶Ô·Ö½âÇëÇóÁ÷³Ì£¬ÊµÏÖÇëÇóÔÚ¶à¸ö¶ÔÏóÖ®¼äµÄ´«µİ£¬ÖªµÀ×îºóÒ»¸ö¶ÔÏóÍê³ÉÇëÇóµÄ´¦Àí
 /***
- * è¯·æ±‚æ¨¡å—
- * å¼‚æ­¥è¯·æ±‚å¯¹è±¡
- * å‚æ•°data  è¯·æ±‚æ•°æ®
- * å‚æ•°dealType å“åº”æ•°æ®å¤„ç†å¯¹è±¡
- * å‚æ•°dom   äº‹ä»¶æº
+ * ÇëÇóÄ£¿é
+ * Òì²½ÇëÇó¶ÔÏó
+ * ²ÎÊıdata  ÇëÇóÊı¾İ
+ * ²ÎÊıdealType ÏìÓ¦Êı¾İ´¦Àí¶ÔÏó
+ * ²ÎÊıdom   ÊÂ¼şÔ´
  ****/
 var sendData = function (data, dealType, dom) {
     var xhr = new XMLHttpRequest(),
@@ -16,7 +16,7 @@ var sendData = function (data, dealType, dom) {
         if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304) {
             dealData(xhr.responseText, dealType, dom);
         } else {
-            //å¤±è´¥
+            //Ê§°Ü
         }
     };
     for (var i in data) {
@@ -26,8 +26,8 @@ var sendData = function (data, dealType, dom) {
     xhr.send(null);
 }
 /**
- * å“åº”æ•°æ®é€‚é…æ¨¡å—
- * å¤„ç†å“åº”æ•°æ®
+ * ÏìÓ¦Êı¾İÊÊÅäÄ£¿é
+ * ´¦ÀíÏìÓ¦Êı¾İ
  */
 var dealDate = function (data, dealType, dom) {
     var dataType = Object.prototype.toString.call(data);
@@ -51,8 +51,8 @@ var dealDate = function (data, dealType, dom) {
     }
 }
 /**
- * åˆ›å»ºç»„ä»¶æ¨¡å—
- * åˆ›å»ºæç¤ºæ¡†ç»„ä»¶
+ * ´´½¨×é¼şÄ£¿é
+ * ´´½¨ÌáÊ¾¿ò×é¼ş
  */
 var createSug = function (data, dom) {
     var i = 0,
@@ -64,7 +64,7 @@ var createSug = function (data, dom) {
     dom.parentNode.getElementByTagName('ul')[0].innerHTML = html;
 }
 /**
- * åˆ›å»ºæ ¡éªŒç»„ä»¶
+ * ´´½¨Ğ£Ñé×é¼ş
  */
 var createValidataResult=function (data, dom) {
     dom.parentNode.getElementByTagName('span')[0].innerHTML = data;
