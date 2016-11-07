@@ -19,3 +19,4 @@ date| project
 16/11/02|Design Pattern of JavaScript and Some Front-End Algorithms You Should Know
 16/11/03|Design Pattern of JavaScript
 16/11/04|Design Pattern of JavaScript
+16/11/07|Design Pattern of JavaScript
