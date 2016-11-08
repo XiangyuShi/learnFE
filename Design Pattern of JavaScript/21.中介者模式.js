@@ -22,10 +22,10 @@ var Mediator = function () {
     }
 }()
 
-Mediator.register('demo',function () {
+Mediator.register('demo', function () {
     console.log('first');
 })
-Mediator.register('demo',function () {
+Mediator.register('demo', function () {
     console.log('second');
 })
 Mediator.send('demo')

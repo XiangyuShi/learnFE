@@ -20,34 +20,34 @@ article.appendChild(p)
 /**
  * 内存外泄
  */
-g('btn_container').onclick=function (e) {
-    var target=e&&e.target||window.event.srcElement;
-    if(target.id==='btn'){
-        g('btn_container').innerHTML='触发了事件'
+g('btn_container').onclick = function (e) {
+    var target = e && e.target || window.event.srcElement;
+    if (target.id === 'btn') {
+        g('btn_container').innerHTML = '触发了事件'
     }
 }
 /**
  * 数据分发
  */
-var Deal={
-    banner:function () {
+var Deal = {
+    banner: function () {
 
     },
-    aside:function () {
+    aside: function () {
 
     },
-    article:function () {
+    article: function () {
 
     },
-    member:function () {
+    member: function () {
 
     },
-    message:function () {
+    message: function () {
 
     }
 }
-$.get('/deal.php',function (res) {
-    for(var i in res){
-        Deal[i]&&Deal[i](res[i])
+$.get('/deal.php', function (res) {
+    for (var i in res) {
+        Deal[i] && Deal[i](res[i])
     }
 });

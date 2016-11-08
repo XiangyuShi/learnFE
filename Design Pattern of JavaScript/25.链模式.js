@@ -5,10 +5,10 @@
 var A = function (selector, context) {
     return new A.fn.init(selector, context);
 }
-A.fn=A.prototype={
-    constructor:A,
-    init:function (selector, context) {
-        
+A.fn = A.prototype = {
+    constructor: A,
+    init: function (selector, context) {
+
     }
 }
 A.extend = A.fn.extend = function () {
@@ -140,13 +140,13 @@ A.fn.extend({
     }
 })
 A('div')
-.css({
-    height:'30px',
-    border:'1px solide #000',
-    'backgroud-color':'red'
-})
-.attr('class','demo')
-.html('add demo text')
-.on('click',function () {
-    console.log('clicked');
-})
+    .css({
+        height: '30px',
+        border: '1px solide #000',
+        'backgroud-color': 'red'
+    })
+    .attr('class', 'demo')
+    .html('add demo text')
+    .on('click', function () {
+        console.log('clicked');
+    })

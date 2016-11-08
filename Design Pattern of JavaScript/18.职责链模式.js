@@ -66,6 +66,6 @@ var createSug = function (data, dom) {
 /**
  * 创建校验组件
  */
-var createValidataResult=function (data, dom) {
+var createValidataResult = function (data, dom) {
     dom.parentNode.getElementByTagName('span')[0].innerHTML = data;
 }

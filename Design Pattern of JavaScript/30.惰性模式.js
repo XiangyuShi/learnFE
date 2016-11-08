@@ -46,6 +46,6 @@ A.on = function (dom, type, fn) {
     }
     A.on(dom, type, fn);
 };
-A.on(document.body,'click',function () {
+A.on(document.body, 'click', function () {
     alert(11)
 })

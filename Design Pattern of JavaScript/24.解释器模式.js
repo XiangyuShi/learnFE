@@ -52,18 +52,18 @@ var Interpreter = (function () {
             path = arguments.callee(node.parentNode, wrap);
         }
         else {
-            if(wrap.nodeType==1){
+            if (wrap.nodeType == 1) {
                 path.push(wrap.nodeName.toUpperCase());
             }
         }
         //获取元素的兄弟元素名称统计
-        var sublingNames=getSublingName(node);
-        if(node.nodeType==1){
-            path.push(node.nodeName.toUpperCase()+sublingNames);
+        var sublingNames = getSublingName(node);
+        if (node.nodeType == 1) {
+            path.push(node.nodeName.toUpperCase() + sublingNames);
         }
         return path;
     }
 })();
 
-var path=Interpreter(document.getElementById('span7'));
+var path = Interpreter(document.getElementById('span7'));
 console.log(path.join('>'));

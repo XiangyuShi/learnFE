@@ -66,49 +66,50 @@ BaseLocalStorage.prototype = {
                 status = that.status.TIMEOUT;
                 that.remove(key)
             }
-        }else{
-            status=that.status.FALLURE;
+        } else {
+            status = that.status.FALLURE;
         }
-        result={
-            status:status,
-            value:value
+        result = {
+            status: status,
+            value: value
         };
         callback && callback.call(this, result.status, result.value)
         return result;
     },
-    remove:function (key, callback) {
-        var status=this.status.FALLURE,
-            key=this.getKey(key),
-            value=null;
-        try{
-            value=this.storage.getItem(key);
-        }catch(e){
-            if(value){
-                try{
+    remove: function (key, callback) {
+        var status = this.status.FALLURE,
+            key = this.getKey(key),
+            value = null;
+        try {
+            value = this.storage.getItem(key);
+        } catch (e) {
+            if (value) {
+                try {
                     this.storage.removeItem(key)
-                    status=this.status.SUCCESS
+                    status = this.status.SUCCESS
                 }
-                catch(e){}
+                catch (e) {
+                }
             }
         }
-        callback&&callback.call(this,status,status>0?null:value.slice(value.indexOf(this.timeSign)+this.timeSign.length))
+        callback && callback.call(this, status, status > 0 ? null : value.slice(value.indexOf(this.timeSign) + this.timeSign.length))
     }
 }
 
-var LS=new BaseLocalStorage('LS_','20170101');
-LS.set('a','xiaoming',function () {
+var LS = new BaseLocalStorage('LS_', '20170101');
+LS.set('a', 'xiaoming', function () {
     console.log(arguments);
 })
-LS.get('a',function () {
+LS.get('a', function () {
     console.log(arguments);
 })
-LS.remove('a',function () {
+LS.remove('a', function () {
     console.log(arguments);
 })
-LS.remove('a',function () {
+LS.remove('a', function () {
     console.log(arguments);
 })
-LS.get('a',function () {
+LS.get('a', function () {
     console.log(arguments);
 })
 
