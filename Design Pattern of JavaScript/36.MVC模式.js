@@ -110,7 +110,7 @@ $(function () {
         var M = MVC.model;
         var C = {
             //侧边导航栏模块
-            initSlideBar:function () {
+            initSlideBar: function () {
                 //渲染导航栏模块视图
 
             }
