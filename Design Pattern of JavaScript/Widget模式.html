@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="demo_tag" class="template">
+    <div id="tag_cloud">
+        {%
+        for(var i = 0,len = tagCloud.length;i < len; i++) {
+        var ctx = tagCloud[i];
+        %}
+        <a href="#" class="tag_item{% if(ctx['is_selected']) { %} selected {% } %}" title="{%=ctx['title']%}">
+            {%=ctx["text"]%}
+        </a>
+        {% } %}
+    </div>
+</div>
+</body>
+<script src="35.Widget模式.js"></script>
+</html>
