@@ -21,3 +21,4 @@ date| project
 16/11/04|Design Pattern of JavaScript
 16/11/07|Design Pattern of JavaScript
 16/11/08|Design Pattern of JavaScript
+16/11/09|Design Pattern of JavaScript
