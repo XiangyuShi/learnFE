@@ -32,13 +32,13 @@ console.log(f2()[1]())
 /*
 经典DOM事件
  */
-var list_obj = document.getElementsByTagName('li');
-for (var i = 0; i <= list_obj.length; i++) {
-
-    (function(i){
-        //var p = i      
-        list_obj[i].onclick = function() {
-            alert(i);
-        }
-    })(i);
-}
+// var list_obj = document.getElementsByTagName('li');
+// for (var i = 0; i <= list_obj.length; i++) {
+//
+//     (function(i){
+//         //var p = i
+//         list_obj[i].onclick = function() {
+//             alert(i);
+//         }
+//     })(i);
+// }
