@@ -45,6 +45,68 @@
     "honor": [
     ]
   }],
+  "experience": [{
+    "type": "internship",
+    "techtype": "WP develop",
+    "place": "大连理工大学ourEDA实验室",
+    "start": "2013.03",
+    "end": "2013.07",
+    "name": "手机开发",
+    "description": [
+      "为13级新生设计的新生助手的手机应用",
+      "主要涉及路线导航，学院周边环境，学院介绍等等",
+      "我主要负责Windows Phone手机端，已发布到微软官方市场"
+    ],
+    "stack": ["XAML","WP7"],
+    "compatibility": "WP7+"
+  },
+    {
+    "type": "internship",
+    "techtype": "frontend",
+    "place": "大连理工大学ourEDA实验室",
+    "start": "2013.11",
+    "end": "2013.12",
+    "name": "前端开发",
+    "description": [
+      "结合专业特色与金融期货知识，专门为期货研究购买者设计的期货信息发布网站",
+      "网站包含每日各大交易所的期货信息数据，最新期货咨询与经验交流等不同板块",
+      "我主要负责前端页面布局与逻辑实现"
+    ],
+    "stack": ["jqueryui", "bootstrap", "jquery"],
+    "compatibility": "IE8+"
+  },
+    {
+    "type": "project",
+    "techtype": "frontend",
+    "project_type": "public",
+    "name": "虚拟宠物医院",
+    "source": "https://github.com/XiangyuShi/Virtual-pet-hospital",
+    "demo": "http://139.196.200.37/testenv/front/pages/login.html",
+    "description": [
+      "为上海农林职业技术学院设计实现虚拟宠物医院网站，方便学校的教学与学生的学习。通过管理前台的病例等操作，实现用户前台模拟一步步的宠物就诊过程",
+      "项目中我们实现前后端分离的开发模式，后端是`Java`，`Hibernate`，`Spring`等，管理前台是`AngularJS`，`Bootstrap`等，用户前台是`Bootstrap`与`jQuery`等",
+      "我主要使用`AngularJS`与`Bootstrap`完成管理前台的病例、病种、科室等管理界面"
+    ],
+    "stack": ["Bootstrap", "AngularJS", "jQuery"],
+    "compatibility": "IE10+"
+  },
+    {
+      "type": "internship",
+      "techtype": "frontend",
+      "place": "大众点评 广告平台 基础技术部",
+      "start": "2016.11",
+      "end": "至今",
+      "name": "前端开发",
+      "description": [
+        "内部销售系统门店详情页改版,内部销售系统仪表盘数据改版",
+         "内部资源管理系统增加广告位配置、 审批流,内部资源管理系统增加日志模块等",
+        "实习期间主要使用 `jQuery` 进行开发， 使用 `gulp`、 `cortex` 等构建工具搭建项目",
+        "近期在跟进`react`新项目"
+      ],
+      "stack": [ "bootstrap", "jquery", "gulp", "less","cortex","react"],
+      "compatibility": "IE8+"
+    }
+  ],
   "language": [{
     "type": "english",
     "certificate": [{
@@ -61,61 +123,19 @@
       "能够在英文邮件列表、Stack Overflow 等社区正常交流",
       "能够在GitHUb社区流畅阅读开源项目代码"
     ]
-  },{
-    "type": "japanese",
-    "certificate": [{
-      "type": "日语N2",
-      "full": "180",
-      "score": "90"
+  },
+    {
+      "type": "japanese",
+      "certificate": [{
+        "type": "日语N2",
+        "full": "180",
+        "score": "90"
+      }],
+      "description": [
+        "能流畅阅读日文项目需求书",
+        "能够听懂基本日常日语对话，进行简单的交流"
+      ]
     }],
-    "description": [
-      "能流畅阅读日文项目需求书",
-      "能够听懂基本日常日语对话，进行简单的交流"
-    ]
-  }],
-  "experience": [{
-    "type": "internship",
-    "techtype": "WP develop",
-    "place": "大连理工大学ourEDA实验室",
-    "start": "2013.03",
-    "end": "2013.07",
-    "name": "手机开发",
-    "description": [
-      "为13级新生设计的新生助手的手机应用",
-      "主要涉及路线导航，学院周边环境，学院介绍等等",
-      "我主要负责Windows Phone手机端，已发布到微软官方市场"
-    ],
-    "stack": ["XAML","WP7"],
-    "compatibility": "WP7+"
-  }, {
-    "type": "internship",
-    "techtype": "frontend",
-    "place": "大连理工大学ourEDA实验室",
-    "start": "2013.11",
-    "end": "2013.12",
-    "name": "前端开发",
-    "description": [
-      "结合专业特色与金融期货知识，专门为期货研究购买者设计的期货信息发布网站",
-      "网站包含每日各大交易所的期货信息数据，最新期货咨询与经验交流等不同板块",
-      "我主要负责前端页面布局与逻辑实现"
-    ],
-    "stack": ["jqueryui", "bootstrap", "jquery"],
-    "compatibility": "IE8+"
-  }, {
-    "type": "project",
-    "techtype": "frontend",
-    "project_type": "public",
-    "name": "虚拟宠物医院",
-    "source": "https://github.com/XiangyuShi/Virtual-pet-hospital",
-    "demo": "http://139.196.200.37/testenv/front/pages/login.html",
-    "description": [
-      "为上海农林职业技术学院设计实现虚拟宠物医院网站，方便学校的教学与学生的学习。通过管理前台的病例等操作，实现用户前台模拟一步步的宠物就诊过程",
-      "项目中我们实现前后端分离的开发模式，后端是`Java`，`Hibernate`，`Spring`等，管理前台是`AngularJS`，`Bootstrap`等，用户前台是`Bootstrap`与`jQuery`等",
-      "我主要使用`AngularJS`与`Bootstrap`完成管理前台的病例、病种、科室等管理界面"
-    ],
-    "stack": ["Bootstrap", "AngularJS", "jQuery"],
-    "compatibility": "IE10+"
-  }],
   "skills": [{
     "type": "frontend",
     "item": [{
@@ -139,7 +159,8 @@
         "掌握基本的前端兼容性处理、性能优化知识与技巧，并能在项目中加以实践"
       ]
     }]
-  }, {
+  },
+    {
     "type": "backend",
     "item": [{
       "summary": "`Node.js`",
@@ -154,7 +175,8 @@
         "了解 `HTTP`（1.x / 2）、 `TCP/IP`、 `WebSocket` 等协议"
       ]
     }]
-  }, {
+  },
+    {
     "type": "miscellaneous",
     "item": [
       "具备基本的 `Web 安全`知识（`X.509` / `XSS` / `CSRF` 等）",
